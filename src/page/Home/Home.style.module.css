@@ -1,0 +1,54 @@
+.main {
+  background-image: url("/src/img/Rectangle\ 1.png");
+}
+
+.main .title {
+  color: #fff;
+  font-family: Archivo;
+  text-align: center;
+}
+
+.main .title p {
+  font-size: 18px;
+  margin-top: 222px;
+  font-weight: 400;
+}
+
+.main .title h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-top: 17px;
+}
+
+.main .title button {
+  background-color: #00AD33;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  width: 137px;
+  height: 47px;
+  margin-top: 56px;
+
+}
+
+.main .title .iconBi {
+  /* width: 30px;
+  height: 30px; */
+  margin-top: 226px;
+}
+
+.weGet {
+  background-color: #090C06;
+  color: #fff;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 47px;
+  font-weight: 700;
+  font-family: Archivo;
+}
+
+.get {
+  color: #00AD33;
+}

@@ -1,0 +1,49 @@
+.main {
+    display: flex;
+}
+
+.main img {
+    width: 65px;
+    height: 53px;
+    margin: 40px 0px 0px 100px;
+}
+
+.main .menu {
+    display: flex;
+    width: 1240px;
+    margin-left: 196px;
+    /* margin-top: 59px; */
+}
+
+.main .menu li {
+    margin-top: 59px;
+}
+
+.main .menu li a {
+    color: #fff;
+    font-size: 14px;
+    font-family: Archivo;
+    line-height: 15.23px;
+    text-decoration: none;
+    margin-left: 48px;
+}
+
+.main .menu .icon {
+    color: #fff;
+    margin-left: 178px;
+    margin-top: 59px;
+    width: 24px;
+    height: 24px;
+
+}
+
+.main .menu .translate {
+    background-color: #00AD33;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 16px;
+    margin-top: 52px;
+}
