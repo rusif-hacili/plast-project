@@ -52,3 +52,97 @@
 .get {
   color: #00AD33;
 }
+
+.img,
+.img3 {
+  margin-left: 48%
+}
+
+.box {
+  text-align: center;
+  margin-top: 128px;
+}
+
+.ourProduct,
+.product {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: Archivo;
+
+}
+
+.ourProduct {
+  color: #090C06;
+}
+
+.product {
+  color: #00AD33;
+}
+
+.paperNapkin {
+  background-color: #090C06;
+  margin-top: 64px;
+}
+
+.paperNapkin .direction {
+  margin-left: 150px;
+  margin-top: 64px;
+}
+
+.sectionFour {
+  margin-top: 64px;
+  font-family: Archivo;
+  position: relative;
+}
+
+.sectionFour .boxTo {
+  display: flex;
+}
+
+.sectionFour .boxTo .boxThree {
+  margin-left: 140px;
+}
+
+.sectionFour .boxTo img {
+  margin-left: 120px;
+}
+
+.sectionFour .boxTo h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.sectionFour .boxTo p {
+  font-size: 14px;
+  width: 580px;
+  height: 231px;
+  line-height: 21px;
+  margin-top: 24px;
+}
+
+.sectionFour .boxFour {
+  background-color: #00AD33;
+  color: #fff;
+  width: 330px;
+  height: 169px;
+  border-radius: 16px;
+  position: absolute;
+  top: 70%;
+  left: 27%;
+}
+
+.sectionFour .boxFour p {
+  padding: 25px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.sectionFour .boxFour h5 {
+  margin-left: 30px;
+}
+
+.connection {
+  margin-top: 164px ;
+  text-align: center;
+}

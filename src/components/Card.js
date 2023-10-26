@@ -10,6 +10,9 @@ function Card() {
                     return (
                         <CardItem
                             key={key}
+                            image={cardItem.image}
+                            name={cardItem.name}
+                            text={cardItem.text}
                         />
                     )
                 })}
