@@ -10,19 +10,27 @@ import img3 from "../../img/Polygon 1 (1).png";
 import img4 from "..//..//img/Rectangle 420.png";
 import InputSection from '../../components/InputSection';
 import Footer from '../../components/Footer';
+import Modal from '../../components/Modal';
+import { Link } from 'react-router-dom';
 
 
 
 function Home() {
+
+  const onClick = () => {
+    console.log('aaa')
+  }
+
   return (
     <>
       <div className={styles.homePage}>
         <div className={styles.main}>
-          <Header />
+          {/* <Header /> */}
           <div className={styles.title}>
             <p>Daha gözəl gələcək üçün</p>
             <h1>Təbiətə atmayaq!</h1>
-            <button>Müraciət et</button>
+            <Modal />
+            {/* <button onClick={onClick}>Müraciət et</button> */}
             <div className={styles.iconBi}><BiChevronsDown /></div>
           </div>
         </div>
@@ -60,7 +68,7 @@ function Home() {
         </section>
         <div className={styles.connection}><span className={styles.ourProduct}>BİZİMLƏ <span className={styles.product}>ƏLAQƏ</span><span>.</span></span></div>
         <InputSection />
-        <Footer />
+        {/* <Footer /> */}
       </div>
 
     </>

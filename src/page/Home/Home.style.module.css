@@ -1,16 +1,19 @@
 .main {
-  background-image: url("/src/img/Rectangle\ 1.png");
+  background-image: url('/src/img/Rectangle.png');
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
 }
 
 .main .title {
   color: #fff;
   font-family: Archivo;
   text-align: center;
+  padding: 163px;
 }
 
 .main .title p {
   font-size: 18px;
-  margin-top: 222px;
+  /* margin-top: 222px; */
   font-weight: 400;
 }
 
@@ -128,9 +131,16 @@
   height: 169px;
   border-radius: 16px;
   position: absolute;
-  top: 70%;
-  left: 27%;
+  top: 72%;
+  left: 28%;
 }
+
+.sectionFour .boxMain {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+}
+
 
 .sectionFour .boxFour p {
   padding: 25px;
@@ -143,6 +153,19 @@
 }
 
 .connection {
-  margin-top: 164px ;
+  margin-top: 164px;
   text-align: center;
+}
+
+
+.sectionTo {
+  margin-top: 126px;
+  margin-bottom: 180px;
+}
+
+.sectionTo .boxFour {
+  position: absolute;
+
+  top: 88%;
+  left: 50%;
 }

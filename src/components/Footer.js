@@ -7,11 +7,30 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 import { BiLogoWhatsapp } from "react-icons/bi";
+import { useState } from 'react';
+import { useEffect } from 'react';
+// import { withRouter } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function Footer() {
+
+    const location = useLocation();
+    const [background, setBackground] = useState('transparent');
+    const [color, setColor] = useState('transparent');
+
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            setBackground('#090C06') || setColor('#fff'); // Home page background color
+        } else {
+            setBackground('#F8F8F7') || setColor('#090C06'); // Other pages background color
+        }
+    }, [location]);
+
+
     return (
         <>
-            <div className='footer'>
+            <div className='footer' style={{ background, color}}>
                 <div className='mainBox'>
                     <div className='box'>
                         <img src={img} alt="" />

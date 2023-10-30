@@ -5,10 +5,63 @@ import reportWebVitals from './reportWebVitals';
 import "./index.css"
 import './reset.css'
 import "@fontsource/archivo";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './page/Home/Home';
+import Buy from './page/Buy/Buy';
+import Product from './page/Product/Product';
+import Devices from './page/Devices/Devices';
+import About from './page/About/About';
+import Connection from './page/Connection/Connection';
+import Search from './page/Search/Search';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        element: <Home />,
+        index: true
+      },
+
+      {
+        path: '/buy',
+        element: <Buy />
+      },
+
+      {
+        path: '/product',
+        element: <Product />
+      },
+
+      {
+        path: '/devices',
+        element: <Devices />
+      },
+
+      {
+        path: '/about',
+        element: <About />
+      },
+
+      {
+        path: '/connection',
+        element: <Connection />
+      },
+
+      {
+        path: '/search',
+        element: <Search />
+      }
+    ]
+  }
+])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}>
+      <App />
+    </RouterProvider>
   </React.StrictMode>
 );
 

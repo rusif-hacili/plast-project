@@ -1,25 +1,25 @@
-.main {
+.header {
     display: flex;
 }
 
-.main img {
+.header img {
     width: 65px;
     height: 53px;
     margin: 40px 0px 0px 100px;
 }
 
-.main .menu {
+.header .menu {
     display: flex;
     width: 1240px;
     margin-left: 196px;
     /* margin-top: 59px; */
 }
 
-.main .menu li {
+.header .menu li {
     margin-top: 59px;
 }
 
-.main .menu li a {
+.header .menu li a {
     color: #fff;
     font-size: 14px;
     font-family: Archivo;
@@ -28,7 +28,7 @@
     margin-left: 48px;
 }
 
-.main .menu .icon {
+.header .menu .icon {
     color: #fff;
     margin-left: 178px;
     margin-top: 59px;
@@ -37,7 +37,11 @@
 
 }
 
-.main .menu .translate {
+.header .icon .search {
+    color: #fff;
+}
+
+.header .menu .translate {
     background-color: #00AD33;
     color: #fff;
     width: 28px;
@@ -52,7 +56,6 @@
 
     font-family: Archivo;
     position: relative;
-    margin-top: 76px;
     border: 1px solid #E8E8E8;
     border-radius: 8px;
     padding: 20px;
@@ -97,7 +100,7 @@
     font-weight: 700;
     border: none;
     border-radius: 8px;
-    margin-top: 40px;
+    margin-top: 65px;
 }
 
 .cardItem .information {
@@ -129,7 +132,7 @@
     flex-wrap: wrap;
     width: 90%;
     margin-left: 120px;
-
+    margin-bottom: 100px;
 
 }
 
@@ -137,6 +140,7 @@
     display: flex;
     width: 90%;
     margin-left: 120px;
+    margin-bottom: 100px;
 }
 
 .paperItem {
@@ -149,7 +153,6 @@
 }
 
 .paperItem h5 {
-    color: #fff;
     font-size: 16px;
     font-weight: 700;
     margin-top: 24px;
@@ -157,7 +160,6 @@
 }
 
 .paperItem p {
-    color: #fff;
     font-size: 14px;
     width: 222px;
     height: 48px;
@@ -177,32 +179,35 @@
     height: 37px;
     border-radius: 8px;
     font-size: 12px;
+    border: none;
 
 }
 
 .paperItem .mainBox div {
     width: 80px;
     height: 15px;
-    color: #fff;
+    /* color: #fff; */
     margin: 10px 0px 0px 24px;
 }
 
 .inputSection {
     background-color: #090C06;
     margin-top: 64px;
+    /* margin-bottom: 100px; */
 }
 
 .inputSection img {
     margin-left: 48%;
 }
 
-.inputSection div {
+.inputSection form {
     margin-top: 76px;
     margin-left: 148px;
 }
 
-.inputSection div input,
-.inputSection textarea {
+.inputSection textarea,
+.inputSection form .name,
+.inputSection form .number {
     background-color: #090C06;
     border: 1px solid #fff;
     border-radius: 16px;
@@ -211,17 +216,20 @@
     color: #fff;
 }
 
-.inputSection div input {
+.inputSection form .name,
+.inputSection form .number {
     width: 556px;
     height: 45px;
-    /* background-color: #090C06;
-    border: 1px solid #fff;
-    border-radius: 16px;
-    padding: 6px;
-    font-size: 14px;
-    color: #fff; */
     margin-right: 32px;
 }
+
+/* .name {
+    border-radius: 16px !important;
+    color: #fff !important;
+    width: 556px;
+    border: 1px solid #fff;
+    margin-right: 32px;
+} */
 
 .inputSection textarea {
     width: 1144px;
@@ -238,12 +246,13 @@
     color: #F8F8F7;
     border-radius: 8px;
     margin-top: 48px;
-    margin-bottom: 100px;
+    border: none;
+    margin-left: 148px;
 }
 
 .footer {
-    background-color: #090C06;
-    color: #fff;
+    /* background-color: #090C06;
+    color: #fff; */
     font-family: Archivo;
 }
 
@@ -251,6 +260,7 @@
 .footer .mainBox {
     display: flex;
     width: 90%;
+    padding-top: 100px;
 
 }
 
@@ -283,7 +293,7 @@
     width: 286px;
 }
 
-.footer .box .socialIcon span{
+.footer .box .socialIcon span {
     padding-right: 14px;
 }
 
@@ -294,8 +304,8 @@
 }
 
 .footer .copyRight span {
-  margin-right: 30px;
-} 
+    margin-right: 30px;
+}
 
 .footer .copyRight .plast,
 .footer .copyRight .crocusoft {
@@ -310,4 +320,114 @@
 .line {
     border-top: 1px solid #999999;
     margin-top: 114px;
+}
+
+.title {
+    color: #fff;
+    font-size: 44px;
+    font-weight: bold;
+    font-family: Archivo;
+    margin-top: 72px;
+    text-align: center;
+}
+
+.link {
+    font-size: 12px;
+    color: #fff;
+}
+
+.transition {
+    text-align: center;
+    margin-top: 16px;
+    /* margin-bottom: 20px; */
+    position: relative;
+}
+
+.transition input {
+    width: 556px;
+    height: 48px;
+    border-radius: 16px;
+    padding: 0px 20px;
+    margin-bottom: 36px;
+    border: none;
+}
+
+.icon {
+    color: #fff;
+}
+
+.search-icon {
+    position: absolute;
+    top: 20%;
+    left: 68%;
+    color: #00AD33;
+}
+
+.homeLink {
+    margin-right: 5px;
+}
+
+.buyLink {
+    margin-left: 5px;
+}
+
+.distance {
+    margin-bottom: 100px;
+}
+
+.imgMain {
+    background-image: url('/src/img/Rectangle.png');
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 100px;
+}
+
+.modal {
+    background-color: #fff;
+    width: 446px;
+    height: 522px;
+    border-radius: 24px;
+    padding: 0px 32px;
+}
+
+.modal h1 {
+    font-size: 32px;
+    font-family: Archivo;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 32px;
+    /* margin-left: 36%; */
+    color: #090C06;
+}
+
+.modal form {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.modal form input {
+    width: 382px;
+    height: 40px;
+    border-radius: 24px;
+    padding: 0px 20px;
+    border: 1px solid #989898;
+    margin-bottom: 24px;
+}
+
+.modal button {
+    background-color: #00AD33;
+    color: #fff;
+    width: 137px;
+    border-radius: 16px;
+    border: none;
+    height: 47px;
+    font-size: 14px;
+   
+}
+
+.modal .btn {
+    margin-bottom: 200px;
 }
