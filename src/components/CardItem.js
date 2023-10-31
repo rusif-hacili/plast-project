@@ -1,4 +1,6 @@
 import React from 'react'
+import Modal from './Modal'
+
 
 function CardItem({ image, name, text }) {
     return (
@@ -12,6 +14,7 @@ function CardItem({ image, name, text }) {
                     <button className='appreal'>Müraciət et</button>
                 </div>
                 <span className='price'>5 azn / 1kg</span>
+            
             </div>
         </>
     )

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Home.style.module.css';
 import Header from '../../components/Header';
 import { BiChevronsDown } from "react-icons/bi";
@@ -12,14 +12,21 @@ import InputSection from '../../components/InputSection';
 import Footer from '../../components/Footer';
 import Modal from '../../components/Modal';
 import { Link } from 'react-router-dom';
-
+import Carousel from '../../components/Carousel';
+import { useTranslation } from 'react-i18next';
 
 
 function Home() {
 
-  const onClick = () => {
-    console.log('aaa')
-  }
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (e) => {
+      i18n.changeLanguage(e.target.value);
+  };
+
+
+
 
   return (
     <>
@@ -27,10 +34,10 @@ function Home() {
         <div className={styles.main}>
           {/* <Header /> */}
           <div className={styles.title}>
-            <p>Daha gözəl gələcək üçün</p>
-            <h1>Təbiətə atmayaq!</h1>
+            <p>{t('title.subHead')}</p>
+            <h1>{t('title.mainHead')}</h1>
             <Modal />
-            {/* <button onClick={onClick}>Müraciət et</button> */}
+            {/* <button>Müraciət et</button> */}
             <div className={styles.iconBi}><BiChevronsDown /></div>
           </div>
         </div>
@@ -42,7 +49,8 @@ function Home() {
 
         <section className={styles.paperNapkin}>
           <img className={styles.img3} src={img3} alt="" />
-          <Paper />
+          {/* <Paper /> */}
+          <Carousel className='carousel'/>
           <img className={styles.direction} src={img2} alt="" />
           <div className={styles.weGet}><span>HAQQIMIZDA<span className={styles.get}>MƏLUMAT</span> <span>.</span></span></div>
         </section>

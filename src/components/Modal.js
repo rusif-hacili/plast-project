@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+var arr = []
+
 function Modal() {
     const [showModal, setShowModal] = useState(false);
     const [formData, setFormData] = useState({
@@ -17,10 +19,19 @@ function Modal() {
         });
     };
 
+    // const initialState = {s
+    //     kategoriya,
+    //     weight,
+    //     name,
+    //     number,
+    // }
     const handleSubmit = (e) => {
+        arr.push(formData)
         e.preventDefault();
         // Handle form submission logic here
         console.log('Form data submitted:', formData);
+        localStorage.setItem('Submit', JSON.stringify(arr))
+
     };
 
     return (
@@ -38,8 +49,8 @@ function Modal() {
                             <div>
                                 <input
                                     type="text"
-                                    id="name"
-                                    name="name"
+                                    id="kategoriya"
+                                    name="kategoriya"
                                     value={formData.kategoriya}
                                     onChange={handleInputChange}
                                     placeholder='Satdığınız malın kategoriyası'
@@ -48,8 +59,8 @@ function Modal() {
                             <div>
                                 <input
                                     type="text"
-                                    id="name"
-                                    name="name"
+                                    id="weight"
+                                    name="weight"
                                     value={formData.weight}
                                     onChange={handleInputChange}
                                     placeholder='Çəkisi'

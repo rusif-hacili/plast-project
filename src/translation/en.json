@@ -1,0 +1,21 @@
+{
+    "navbar": {
+        "home": "HOME PAGE",
+        "weBuy": "BUY",
+        "ourProducts": "PRODUCTS",
+        "devices": "DEVİCES",
+        "aboutUs": "ABOUT",
+        "contact": "CONTACT US"
+    },
+    "title": {
+        "subHead": "For a better future",
+        "mainHead": "Don't throw to nature!"
+    },
+    "weBuyProducts": {
+        "papers": "Papers (A4)",
+        "newsPapers": "Newspapers",
+        "cardBoards": "Cardboards",
+        "archive": "Archive",
+        "mixed": "Mixed"
+    }
+}

@@ -17,7 +17,7 @@ function InputSection() {
     if (location.pathname === '/') {
       setBackground('#090C06') || setBorder('1px solid #fff') || setColor('#fff'); // Home page background color
     } else {
-      setBackground('#fff') || setBorder('1px solid #AEAEAE') || setColor('#black'); // Other pages background color
+      setBackground('#fff') || setBorder('1px solid #AEAEAE') || setColor('black'); // Other pages background color
     }
   }, [location]);
 

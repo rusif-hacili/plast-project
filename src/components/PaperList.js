@@ -24,5 +24,20 @@ export const paperList = [
     {
         image: img5,
         name: 'Kağız salfetlər'
+    },
+
+    {
+        image: img5,
+        name: 'Kağız salfetlər'
+    },
+
+    {
+        image: img5,
+        name: 'Kağız salfetlər'
+    },
+
+    {
+        image: img5,
+        name: 'Kağız salfetlər'
     }
 ]

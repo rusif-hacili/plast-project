@@ -1,3 +1,7 @@
+/* body {
+    overflow-y: hidden;
+} */
+
 .header {
     display: flex;
 }
@@ -10,8 +14,8 @@
 
 .header .menu {
     display: flex;
-    width: 1240px;
-    margin-left: 196px;
+    /* width: 1240px; */
+    margin-left: 186px;
     /* margin-top: 59px; */
 }
 
@@ -50,6 +54,11 @@
     line-height: 28px;
     margin-left: 16px;
     margin-top: 52px;
+}
+
+.header .menu .translate  select {
+    background-color: #00AD33;
+    height: 40px;
 }
 
 .cardItem {
@@ -385,11 +394,19 @@
 }
 
 .modal {
+    position: relative;
     background-color: #fff;
     width: 446px;
     height: 522px;
     border-radius: 24px;
     padding: 0px 32px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-left: 30%;
+    bottom: 300px;
+    background-attachment: fixed;
+    transform: translate(50% 50%);
 }
 
 .modal h1 {
@@ -398,14 +415,14 @@
     font-weight: bold;
     margin-bottom: 40px;
     margin-top: 32px;
-    /* margin-left: 36%; */
     color: #090C06;
+    margin-right: 50px;
 }
 
 .modal form {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 .modal form input {
@@ -425,9 +442,55 @@
     border: none;
     height: 47px;
     font-size: 14px;
-   
+
 }
 
 .modal .btn {
     margin-bottom: 200px;
+}
+
+.close {
+    /* background-color: #989898; */
+    color: #090C06;
+    font-size: 32px;
+    border-radius: 16px;
+    padding: 4px 8px;
+    margin-left: 99%;
+    /* margin-top: 200px; */
+}
+
+.cardModal {
+    transform: translate(50% 50%);
+}
+
+
+.carousel {
+  margin-left: 120px;
+}
+
+.slick-prev,
+.slick-next {
+    color: red!important;
+    background-color: black !important;
+    border: none;
+    position: absolute;
+    top: 120%;
+    /* left: 5%; */
+}
+
+.slick-list {
+  margin: 0px 120px;
+}
+
+.slick-prev {
+    margin: 0px 170px;
+}
+
+.slick-next {
+    margin-right: 30px;
+    right: 82%;
+}
+
+.slick-active button {
+  color: #fff !important;
 }

@@ -13,6 +13,7 @@ import Devices from './page/Devices/Devices';
 import About from './page/About/About';
 import Connection from './page/Connection/Connection';
 import Search from './page/Search/Search';
+import "./i18n";
 
 const router = createBrowserRouter([
   {

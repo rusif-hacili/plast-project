@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "home": "ANA SƏHİFƏ",
+        "weBuy": "ALIRIQ",
+        "ourProducts": "MƏHSULLARIMIZ",
+        "devices": "CİHAZLAR",
+        "aboutUs": "HAQQIMIZDA",
+        "contact": "ƏLAQƏ"
+    },
+    "title": {
+        "subHead": "Daha gözəl gələcək üçün",
+        "mainHead": "Təbiətə atmayaq!"
+    },
+    "weBuyProducts": {
+        "papers": "Ağ vərəqlər (A4)",
+        "newsPapers": "Qəzetlər",
+        "cardBoards": "Karton kağızlar",
+        "archive": "Arxiv",
+        "mixed": "Qarışıq"
+    }
+
+}

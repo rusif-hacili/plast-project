@@ -1,10 +1,12 @@
 import React from 'react';
 import { GoSearch } from "react-icons/go";
 import Modal from '../../components/Modal';
+import Carousel from '../../components/Carousel';
+
 
 
 function Search() {
-    
+
     return (
         <>
             <div className='searchPage'>
@@ -16,6 +18,7 @@ function Search() {
                     </div>
                 </div>
                 <Modal />
+                <Carousel />
             </div>
         </>
     )
