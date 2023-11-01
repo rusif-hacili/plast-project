@@ -1,15 +1,25 @@
 {
     "navbar": {
         "home": "HOME PAGE",
-        "weBuy": "BUY",
-        "ourProducts": "PRODUCTS",
+        "weBuy": "WE BUY",
+        "ourProducts": "OUR PRODUCTS",
         "devices": "DEVİCES",
-        "aboutUs": "ABOUT",
-        "contact": "CONTACT US"
+        "aboutUs": "ABOUT US",
+        "contact": "CONTACT"
     },
     "title": {
         "subHead": "For a better future",
-        "mainHead": "Don't throw to nature!"
+        "mainHead": "Don't throw to nature!",
+        "we": "WE",
+        "buy": "BUY",
+        "our": "OUR",
+        "products": "PRODUCTS",
+        "about": "İNFORMATİON",
+        "information": "ABOUT US",
+        "withUs": "WİTH US",
+        "contact": "CONTACT",
+        "details": "Details",
+        "apply": "Apply"
     },
     "weBuyProducts": {
         "papers": "Papers (A4)",
@@ -17,5 +27,44 @@
         "cardBoards": "Cardboards",
         "archive": "Archive",
         "mixed": "Mixed"
+    },
+    "weBuy": {
+        "buy": "WE BUY",
+        "home": "Home page",
+        "buyLink": "Buy"
+    },
+    "weProduct": {
+        "products": "OUR PRODUCTS",
+        "home": "Home page",
+        "productLink": "Our products"
+    },
+    "weDevices": {
+        "devices": "DEVİCES",
+        "home": "Home page",
+        "devicesLink": "Devices"
+    },
+    "aboutUs": {
+        "about": "İNFORMATİON ABOUT US",
+        "home": "Home page",
+        "aboutLink": "About Us",
+        "title": "Who are we ?",
+        "titleTo": "What are we doing ?"
+    },
+    "contactUs": {
+        "contact": "CONTACT US",
+        "home": "Home page",
+        "contactLink": "Contact"
+    },
+    "searchUs": {
+        "search": "SEARCH"
+    },
+    "footerPage": {
+        "ourActivity": "Our Activity",
+        "ourProducts": "Our Products",
+        "weBuy": "We Buy",
+        "devices": "Devices",
+        "contactUs": "Contact Us",
+        "ourLoction": "Our Location",
+        "location": "Baku city, Fikret Amirov 24, Perron Gallery 2nd floor. (next to May 28 metro station)"
     }
 }

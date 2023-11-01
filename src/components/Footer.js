@@ -10,7 +10,8 @@ import { BiLogoWhatsapp } from "react-icons/bi";
 import { useState } from 'react';
 import { useEffect } from 'react';
 // import { withRouter } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
 
@@ -27,23 +28,25 @@ function Footer() {
         }
     }, [location]);
 
+    const { t, i18n } = useTranslation();
+
 
     return (
         <>
-            <div className='footer' style={{ background, color}}>
+            <div className='footer' style={{ background, color }}>
                 <div className='mainBox'>
                     <div className='box'>
                         <img src={img} alt="" />
-                        <h4>Fəaliyyətimiz</h4>
+                        <h4>{t('footerPage.ourActivity')}</h4>
                         {/* <img src={line} alt="" /> */}
-                        <h6>Məhsullarımız</h6>
-                        <p>Biz alırıq</p>
-                        <p>Cihazlar</p>
+                        <h6><Link style={{ color }} className='productName' to={'/product'}>{t('footerPage.ourProducts')}</Link></h6>
+                        <p><Link style={{ color }} className='buyName' to={'/buy'}>{t('footerPage.weBuy')}</Link></p>
+                        <p><Link style={{ color }} className='devicesName' to={'/devices'}>{t('footerPage.devices')}</Link></p>
                     </div>
 
                     <div className='box'>
                         <img src={img2} alt="" />
-                        <h4>Bizimlə əlaqə</h4>
+                        <h4>{t('footerPage.contactUs')}</h4>
                         <p>+994 12 222 22 22</p>
                         <p>info@plast.az</p>
                         <div className='socialIcon'>
@@ -56,8 +59,8 @@ function Footer() {
 
                     <div className='box'>
                         <img src={img3} alt="" />
-                        <h4>Bizim Məkan</h4>
-                        <p>Bakı şəhəri, Fikrət Əmirov 24, Perron Gallery 2-ci mərtəbə.( 28 may metro stansiyasının yanı)</p>
+                        <h4>{t('footerPage.ourLoction')}</h4>
+                        <p>{t('footerPage.location')}</p>
                     </div>
                 </div>
 

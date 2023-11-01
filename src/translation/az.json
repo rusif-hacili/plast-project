@@ -9,7 +9,17 @@
     },
     "title": {
         "subHead": "Daha gözəl gələcək üçün",
-        "mainHead": "Təbiətə atmayaq!"
+        "mainHead": "Təbiətə atmayaq!",
+        "we": "BİZ",
+        "buy": "ALIRIQ",
+        "our": "BİZİM",
+        "products": "MƏHSULLARIMIZ",
+        "about": "HAQQIMIZDA",
+        "information": "MƏLUMAT",
+        "withUs": "BİZİMLƏ",
+        "contact": "ƏLAQƏ",
+        "details": "Ətraflı məlumat",
+        "apply": "Müraciət et"
     },
     "weBuyProducts": {
         "papers": "Ağ vərəqlər (A4)",
@@ -17,6 +27,44 @@
         "cardBoards": "Karton kağızlar",
         "archive": "Arxiv",
         "mixed": "Qarışıq"
+    },
+    "weBuy": {
+        "buy": "BİZ ALIRIQ",
+        "home": "Ana səhifə",
+        "buyLink": "Alırıq"
+    },
+    "weProduct": {
+        "products": "MƏHSULLARIMIZ",
+        "home": "Ana səhifə",
+        "productLink": "Məhsullarımız"
+    },
+    "weDevices": {
+        "devices": "CİHAZLAR",
+        "home": "Ana səhifə",
+        "devicesLink": "Cihazlar"
+    },
+    "aboutUs": {
+        "about": "HAQQIMIZDA MƏLUMAT",
+        "home": "Ana səhifə",
+        "aboutLink": "Haqımızda",
+        "title": "Biz kimik ?",
+        "titleTo": "Nə işlə məşğul oluruq ?"
+    },
+    "contactUs": {
+        "contact": "BİZİMLƏ ƏLAQƏ",
+        "home": "Ana səhifə",
+        "contactLink": "Əlaqə"
+    },
+    "searchUs": {
+        "search": "AXTAR"
+    },
+    "footerPage": {
+        "ourActivity": "Fəaliyyətimiz",
+        "ourProducts": "Məhsullarımız",
+        "weBuy": "Biz alırıq",
+        "devices": "Cihazlar",
+        "contactUs": "Bizimlə əlaqə",
+        "ourLoction": "Bizim Məkan",
+        "location": "Bakı şəhəri, Fikrət Əmirov 24, Perron Gallery 2-ci mərtəbə.( 28 may metro stansiyasının yanı)"
     }
-
 }

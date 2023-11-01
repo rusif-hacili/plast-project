@@ -14,6 +14,7 @@ import About from './page/About/About';
 import Connection from './page/Connection/Connection';
 import Search from './page/Search/Search';
 import "./i18n";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
   {
@@ -21,38 +22,38 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        element: <Home />,
+        element: <Home show={"home"}/>,
         index: true
       },
 
       {
         path: '/buy',
-        element: <Buy />
+        element: <Buy show={"buy"} />
       },
 
       {
         path: '/product',
-        element: <Product />
+        element: <Product show={"product"}/>
       },
 
       {
         path: '/devices',
-        element: <Devices />
+        element: <Devices show={"devices"}/>
       },
 
       {
         path: '/about',
-        element: <About />
+        element: <About show={"about"} />
       },
 
       {
         path: '/connection',
-        element: <Connection />
+        element: <Connection show={"connection"} />
       },
 
       {
         path: '/search',
-        element: <Search />
+        element: <Search show={"search"}/>
       }
     ]
   }

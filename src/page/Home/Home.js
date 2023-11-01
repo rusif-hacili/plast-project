@@ -21,9 +21,9 @@ function Home() {
 
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = (e) => {
-      i18n.changeLanguage(e.target.value);
-  };
+  // const changeLanguage = (e) => {
+  //     i18n.changeLanguage(e.target.value);
+  // };
 
 
 
@@ -42,17 +42,17 @@ function Home() {
           </div>
         </div>
 
-        <div className={styles.weGet}><span>BİZ <span className={styles.get}>ALIRIQ</span> <span> !</span></span></div>
+        <div className={styles.weGet}><span>{t('title.we')} <span className={styles.get}>{t('title.buy')}</span> <span> !</span></span></div>
         <img className={styles.img} src={img} alt="" />
         <Card />
-        <div className={styles.box}><span className={styles.ourProduct}>BİZİM <span className={styles.product}>MƏHSULLARIMIZ</span><span>.</span></span></div>
+        <div className={styles.box}><span className={styles.ourProduct}>{t('title.our')} <span className={styles.product}>{t('title.products')} </span><span>.</span></span></div>
 
         <section className={styles.paperNapkin}>
           <img className={styles.img3} src={img3} alt="" />
           {/* <Paper /> */}
           <Carousel className='carousel'/>
           <img className={styles.direction} src={img2} alt="" />
-          <div className={styles.weGet}><span>HAQQIMIZDA<span className={styles.get}>MƏLUMAT</span> <span>.</span></span></div>
+          <div className={styles.weGet}><span>{t('title.about')} <span className={styles.get}>{t('title.information')}</span> <span>.</span></span></div>
         </section>
         <img className={styles.img} src={img} alt="" />
 
@@ -60,7 +60,7 @@ function Home() {
           <div className={styles.boxTo}>
             <img src={img4} alt="" />
             <div className={styles.boxThree}>
-              <h3>Biz kimik <span>?</span></h3>
+              <h3>{t('aboutUs.title')}</h3>
               <p>Tortor, nibh orci, sed in sed sed dictum tristique. Turpis laoreet euismod nisi viverra. Pretium id massa adipiscing pellentesque euismod ut pharetra. Tortor, nibh orci, sed in sed sed dictum tristique. Turpis laoreet euismod nisi viverra. Pretium id massa adipiscing pellentesque euismod ut pharetra.
 
 
@@ -74,7 +74,7 @@ function Home() {
           </div>
 
         </section>
-        <div className={styles.connection}><span className={styles.ourProduct}>BİZİMLƏ <span className={styles.product}>ƏLAQƏ</span><span>.</span></span></div>
+        <div className={styles.connection}><span className={styles.ourProduct}>{t('title.withUs')} <span className={styles.product}>{t('title.contact')}</span><span>.</span></span></div>
         <InputSection />
         {/* <Footer /> */}
       </div>

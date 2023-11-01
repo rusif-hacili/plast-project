@@ -18,13 +18,7 @@ function Modal() {
             [name]: value,
         });
     };
-
-    // const initialState = {s
-    //     kategoriya,
-    //     weight,
-    //     name,
-    //     number,
-    // }
+    
     const handleSubmit = (e) => {
         arr.push(formData)
         e.preventDefault();

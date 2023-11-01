@@ -15,11 +15,11 @@ export const paperList = [
     },
     {
         image: img3,
-        name: 'Kağız salfetlər'
+        name: 'Rəngli salfetlər'
     },
     {
         image: img4,
-        name: 'Kağız salfetlər'
+        name: 'Rəngli kağızlar'
     },
     {
         image: img5,
@@ -39,5 +39,13 @@ export const paperList = [
     {
         image: img5,
         name: 'Kağız salfetlər'
-    }
+    },
+    {
+        image: img3,
+        name: 'Kağız salfetlər'
+    },
+    {
+        image: img3,
+        name: 'Kağız salfetlər'
+    },
 ]

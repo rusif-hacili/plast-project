@@ -4,6 +4,7 @@
 
 .header {
     display: flex;
+    background-image: url('./img//Rectangle.png');
 }
 
 .header img {
@@ -56,7 +57,7 @@
     margin-top: 52px;
 }
 
-.header .menu .translate  select {
+.header .menu .translate select {
     background-color: #00AD33;
     height: 40px;
 }
@@ -147,6 +148,7 @@
 
 .paperList {
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin-left: 120px;
     margin-bottom: 100px;
@@ -295,6 +297,13 @@
 
 }
 
+.footer .productName,
+.footer .buyName,
+.footer .devicesName {
+    text-decoration: none;
+    /* color: #fff; */
+}
+
 .footer .box p {
     font-size: 14px;
     margin-bottom: 16px;
@@ -386,6 +395,7 @@
 
 .imgMain {
     background-image: url('/src/img/Rectangle.png');
+    background-position: 100%;
     padding: 20px;
 }
 
@@ -406,7 +416,7 @@
     margin-left: 30%;
     bottom: 300px;
     background-attachment: fixed;
-    transform: translate(50% 50%);
+    /* transform: translate(100% 100%); */
 }
 
 .modal h1 {
@@ -461,16 +471,17 @@
 
 .cardModal {
     transform: translate(50% 50%);
+    z-index: 99;
 }
 
 
 .carousel {
-  margin-left: 120px;
+    margin-left: 120px;
 }
 
 .slick-prev,
 .slick-next {
-    color: red!important;
+    color: red !important;
     background-color: black !important;
     border: none;
     position: absolute;
@@ -479,7 +490,7 @@
 }
 
 .slick-list {
-  margin: 0px 120px;
+    margin: 0px 120px;
 }
 
 .slick-prev {
@@ -492,5 +503,17 @@
 }
 
 .slick-active button {
-  color: #fff !important;
+    color: #fff !important;
+}
+
+.bbb {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selected {
+    background-color: rgba(200, 7, 7, 0.966);
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
 }

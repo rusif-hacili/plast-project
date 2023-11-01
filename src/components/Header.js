@@ -4,6 +4,8 @@ import { GoSearch } from "react-icons/go";
 import "@fontsource/archivo";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+// import { myContext } from '../contexts/MyContext';
+// import { useContext } from 'react';
 
 
 export default function Header() {
@@ -13,6 +15,8 @@ export default function Header() {
     const changeLanguage = (e) => {
         i18n.changeLanguage(e.target.value);
     };
+
+    // const [state, dispatch] = useContext(myContext);
 
 
     return (
@@ -28,7 +32,7 @@ export default function Header() {
                     <li><Link to={'/connection'}>{t('navbar.contact')}</Link></li>
                     <div className='icon'><Link to={'/search'}><GoSearch className='search' /></Link></div>
                     <div className='translate'>
-                        <select  defaultValue={i18n.language} onChange={changeLanguage}>
+                        <select defaultValue={i18n.language} onChange={changeLanguage}>
                             <option value="az">Az</option>
                             <option value="en">En</option>
                         </select>
