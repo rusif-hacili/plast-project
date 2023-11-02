@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { BsChevronDoubleRight } from "react-icons/bs";
-import styles from "./Buy.module.css";
 import Card from '../../components/Card';
 import { useTranslation } from 'react-i18next';
 
@@ -11,7 +10,7 @@ function Buy() {
 
   return (
     <>
-      <div className={styles.buyPage}>
+      <div className='buyPage'>
         <div className='imgMain'>
           <h1 className="title">{t('weBuy.buy')}</h1>
           <div className='transition'>

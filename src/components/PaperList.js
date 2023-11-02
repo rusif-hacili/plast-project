@@ -7,7 +7,7 @@ import img5 from "../img/Ellipse 6 (4).png";
 export const paperList = [
     {
         image: img1,
-        name: 'Kağız salfetlər'
+        name: 'Rəngli salfetlər'
     },
     {
         image: img2,
@@ -28,7 +28,7 @@ export const paperList = [
 
     {
         image: img5,
-        name: 'Kağız salfetlər'
+        name: 'Nəmli salfetlər'
     },
 
     {
@@ -42,7 +42,7 @@ export const paperList = [
     },
     {
         image: img3,
-        name: 'Kağız salfetlər'
+        name: 'Nəmli salfetlər'
     },
     {
         image: img3,

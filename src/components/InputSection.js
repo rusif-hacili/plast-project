@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import img from "../img/Polygon 1 (1).png";
-// import Box from '@mui/material/Box';
-// import TextField from '@mui/material/TextField';
+
 var array = [];
 
 function InputSection() {
@@ -24,7 +23,6 @@ function InputSection() {
   const [inputName, setInputName] = useState('');
   const [inputNumber, setInputNumber] = useState('');
   const [text, setText] = useState('');
-
   const handleInputNameChange = (event) => {
     setInputName(event.target.value);
     event.target.value = ''
@@ -55,42 +53,12 @@ function InputSection() {
   };
 
 
-  // const loadFromLocalStorage = () => {
-  //   const saveName = localStorage.getItem('inputName');
-  //   const saveNumber = localStorage.getItem('inputNumber');
-  //   const saveText = localStorage.getItem('text');
-  //   if (saveName, saveNumber, saveText) {
-  //     setInputName(saveName);
-  //     setInputNumber(saveNumber);
-  //     setText(saveText)
-  //   }
-  // }
-
-
   return (
 
     <>
-      {/* <Box
-        component="form"
-        sx={{
-          '& .MuiTextField-root': { m: 1, width: '25ch' },
-        }}
-        noValidate
-        autoComplete="off"
-      ></Box> */}
-
       <div className='inputSection' style={{ background, color }}>
         <img src={img} alt="" />
         <form>
-          {/* <TextField
-            required
-            id="outlined-required"
-            label="Ad və Soyad"
-            defaultValue="Hello World"
-            className='name'
-            style={{ background, color }}
-          /> */}
-
           <input className='name' type="text" placeholder='Rusif Hacılı' style={{ background, border }}
             value={inputName}
             onChange={handleInputNameChange}
@@ -105,7 +73,6 @@ function InputSection() {
           onChange={handleTextChange}
         ></textarea>
         <div><button onClick={saveToLocalStorage}>Göndər</button></div>
-        {/* <button onClick={loadFromLocalStorage}>Load from localStorage</button> */}
       </div>
     </>
   )

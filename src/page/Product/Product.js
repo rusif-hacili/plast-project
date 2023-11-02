@@ -22,7 +22,6 @@ function Product() {
         <div className='bbb'>
           <Paper />
         </div>
-        {/* <Paper /> */}
       </div>
     </>
   )

@@ -9,7 +9,6 @@ import { AiFillYoutube } from "react-icons/ai";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { useState } from 'react';
 import { useEffect } from 'react';
-// import { withRouter } from 'react-router-dom';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -22,9 +21,9 @@ function Footer() {
 
     useEffect(() => {
         if (location.pathname === '/') {
-            setBackground('#090C06') || setColor('#fff'); // Home page background color
+            setBackground('#090C06') || setColor('#fff');
         } else {
-            setBackground('#F8F8F7') || setColor('#090C06'); // Other pages background color
+            setBackground('#F8F8F7') || setColor('#090C06');
         }
     }, [location]);
 
@@ -38,7 +37,6 @@ function Footer() {
                     <div className='box'>
                         <img src={img} alt="" />
                         <h4>{t('footerPage.ourActivity')}</h4>
-                        {/* <img src={line} alt="" /> */}
                         <h6><Link style={{ color }} className='productName' to={'/product'}>{t('footerPage.ourProducts')}</Link></h6>
                         <p><Link style={{ color }} className='buyName' to={'/buy'}>{t('footerPage.weBuy')}</Link></p>
                         <p><Link style={{ color }} className='devicesName' to={'/devices'}>{t('footerPage.devices')}</Link></p>

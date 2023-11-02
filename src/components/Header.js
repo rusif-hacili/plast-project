@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from "../img/Group (1).png";
 import { GoSearch } from "react-icons/go";
 import "@fontsource/archivo";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-// import { myContext } from '../contexts/MyContext';
-// import { useContext } from 'react';
-
-
+import { useState } from 'react';
+import img3 from "../img/Rectangle 2.png"
+import img4 from "../img/Rectangle.png"
 export default function Header() {
+
+    const location = useLocation();
+    const [image, setImage] = useState('transparent');
+
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            setImage(img4);
+        } else {
+            setImage(img3);
+        }
+    }, [location, image]);
 
     const { t, i18n } = useTranslation();
 
@@ -16,12 +27,10 @@ export default function Header() {
         i18n.changeLanguage(e.target.value);
     };
 
-    // const [state, dispatch] = useContext(myContext);
-
 
     return (
         <>
-            <div className='header'>
+            <div className='header' style={{ backgroundImage: `url("${image}")` }} >
                 <img src={img} alt="" />
                 <ul className="menu">
                     <li><Link to={'/'}>{t('navbar.home')}</Link></li>

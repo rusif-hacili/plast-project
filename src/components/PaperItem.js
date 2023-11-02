@@ -10,9 +10,9 @@ function PaperItem({ image, name }) {
 
     useEffect(() => {
         if (location.pathname === '/') {
-            setColor('#fff'); // Home page background color
+            setColor('#fff');
         } else {
-            setColor('#090C06'); // Other pages background color
+            setColor('#090C06');
         }
     }, [location]);
 

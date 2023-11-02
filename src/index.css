@@ -1,27 +1,25 @@
-/* body {
-    overflow-y: hidden;
-} */
-
 .header {
     display: flex;
     background-image: url('./img//Rectangle.png');
+    background-attachment: fixed;
+    width: 100%;
+    height: 133px;
 }
 
 .header img {
     width: 65px;
     height: 53px;
-    margin: 40px 0px 0px 100px;
+    margin: 40px 0px 0px 145px;
 }
 
 .header .menu {
     display: flex;
-    /* width: 1240px; */
-    margin-left: 186px;
-    /* margin-top: 59px; */
+    margin-left: 155px;
 }
 
 .header .menu li {
     margin-top: 59px;
+    list-style: none;
 }
 
 .header .menu li a {
@@ -30,6 +28,7 @@
     font-family: Archivo;
     line-height: 15.23px;
     text-decoration: none;
+    cursor: pointer;
     margin-left: 48px;
 }
 
@@ -69,16 +68,14 @@
     border: 1px solid #E8E8E8;
     border-radius: 8px;
     padding: 20px;
-    width: 350px;
-    height: 452px;
-    margin: 76px 0px 0px 20px;
+    width: 380px;
+    height: 472px;
+    margin: 76px 0px 0px 30px;
 
 }
 
 .cardItem img {
     border-radius: 8px;
-    /* width: 344px;
-    height: 171px; */
 }
 
 .cardItem h1 {
@@ -133,7 +130,7 @@
     padding: 10px 20px;
     border-radius: 8px;
     position: absolute;
-    bottom: 90%;
+    bottom: 93%;
     left: 40px;
 }
 
@@ -197,14 +194,12 @@
 .paperItem .mainBox div {
     width: 80px;
     height: 15px;
-    /* color: #fff; */
     margin: 10px 0px 0px 24px;
 }
 
 .inputSection {
     background-color: #090C06;
     margin-top: 64px;
-    /* margin-bottom: 100px; */
 }
 
 .inputSection img {
@@ -234,14 +229,6 @@
     margin-right: 32px;
 }
 
-/* .name {
-    border-radius: 16px !important;
-    color: #fff !important;
-    width: 556px;
-    border: 1px solid #fff;
-    margin-right: 32px;
-} */
-
 .inputSection textarea {
     width: 1144px;
     height: 116px;
@@ -262,8 +249,6 @@
 }
 
 .footer {
-    /* background-color: #090C06;
-    color: #fff; */
     font-family: Archivo;
 }
 
@@ -301,7 +286,6 @@
 .footer .buyName,
 .footer .devicesName {
     text-decoration: none;
-    /* color: #fff; */
 }
 
 .footer .box p {
@@ -357,7 +341,6 @@
 .transition {
     text-align: center;
     margin-top: 16px;
-    /* margin-bottom: 20px; */
     position: relative;
 }
 
@@ -368,6 +351,13 @@
     padding: 0px 20px;
     margin-bottom: 36px;
     border: none;
+}
+
+.headingText {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .icon {
@@ -394,48 +384,42 @@
 }
 
 .imgMain {
-    background-image: url('/src/img/Rectangle.png');
-    background-position: 100%;
-    padding: 20px;
+    background-image: url('/src/img/Rectangle\ 2.png');
+    padding: 20px 0px 0px 0px;
+    background-attachment: fixed;
 }
 
 .card {
     margin-bottom: 100px;
 }
 
-.modal {
+.mainModal {
     position: relative;
     background-color: #fff;
     width: 446px;
     height: 522px;
     border-radius: 24px;
     padding: 0px 32px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    margin-left: 30%;
+    margin-left: 32%;
     bottom: 300px;
-    background-attachment: fixed;
-    /* transform: translate(100% 100%); */
 }
 
-.modal h1 {
-    font-size: 32px;
+.mainModal h2 {
+    font-size: 42px;
     font-family: Archivo;
     font-weight: bold;
     margin-bottom: 40px;
-    margin-top: 32px;
     color: #090C06;
-    margin-right: 50px;
+    margin-right: 90px;
 }
 
-.modal form {
+.mainModal form {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.modal form input {
+.mainModal form input {
     width: 382px;
     height: 40px;
     border-radius: 24px;
@@ -444,7 +428,7 @@
     margin-bottom: 24px;
 }
 
-.modal button {
+.mainModal button {
     background-color: #00AD33;
     color: #fff;
     width: 137px;
@@ -455,18 +439,12 @@
 
 }
 
-.modal .btn {
-    margin-bottom: 200px;
-}
-
 .close {
-    /* background-color: #989898; */
     color: #090C06;
     font-size: 32px;
     border-radius: 16px;
     padding: 4px 8px;
     margin-left: 99%;
-    /* margin-top: 200px; */
 }
 
 .cardModal {
@@ -486,7 +464,6 @@
     border: none;
     position: absolute;
     top: 120%;
-    /* left: 5%; */
 }
 
 .slick-list {
@@ -509,11 +486,4 @@
 .bbb {
     display: flex;
     flex-wrap: wrap;
-}
-
-.selected {
-    background-color: rgba(200, 7, 7, 0.966);
-    color: #fff;
-    text-decoration: underline;
-    font-weight: bold;
 }

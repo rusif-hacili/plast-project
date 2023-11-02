@@ -3,11 +3,7 @@ import img2 from "../img/img2.png";
 import img3 from "../img/img3.png";
 import img4 from "../img/img4.png";
 import img5 from "../img/img5.png";
-import { useTranslation } from 'react-i18next';
 
-
-// const WeBuyData = () => {
-// const { t, i18n } = useTranslation();
 
 export const cardList = [
     {
@@ -45,9 +41,5 @@ export const cardList = [
     }
 ];
 
-// return cardList
-
-
-// }
 
 

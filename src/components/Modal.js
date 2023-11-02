@@ -33,12 +33,12 @@ function Modal() {
             <button onClick={() => setShowModal(true)}>Open Modal</button>
 
             {showModal && (
-                <div className="modal">
+                <div className="mainModal">
                     <div className="modal-content">
                         <span className="close" onClick={() => setShowModal(false)}>
                             &times;
                         </span>
-                        <h1>MÜRACİƏT ET</h1>
+                        <h2>MÜRACİƏT ET</h2>
                         <form onSubmit={handleSubmit}>
                             <div>
                                 <input
@@ -93,15 +93,3 @@ function Modal() {
 }
 
 export default Modal;
-
-
-{/* <div className='modal'>
-<h1>MÜRACİƏT ET</h1>
-<form action="">
-    <input type="text" placeholder='Satdığınız malın kateqoriyası' />
-    <input type="text" placeholder='Çəkisi' />
-    <input type="text" placeholder='Ad və soyad' />
-    <input type="text" placeholder='Əlaqə nömrəniz' />
-</form>
-<button>Müraciət et</button>
-</div> */}

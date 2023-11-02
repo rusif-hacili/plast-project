@@ -15,11 +15,9 @@ function Search() {
     const [headingText, setHeadingText] = useState('');
     const [filteredPaperList, setFilteredPaperList] = useState(paperList);
 
-    //var filteredPaperList = paperList;
-
     const handleKeyUp = (event) => {
         const result = paperList.filter(item => item.name.includes(event.target.value));
-        const text = event.target.value == '' ? '' : event.target.value + ' açar sözü üzrə axtarış nəticələri...';
+        const text = event.target.value == '' ? '' : event.target.value + ' açar sözü üzrə axtarış nəticələri...'
         setHeadingText(text);
         setFilteredPaperList(result);
     }
@@ -35,9 +33,7 @@ function Search() {
                         <div className='icon search-icon'><GoSearch /></div>
                     </div>
                 </div>
-                {/* <div dangerouslySetInnerHTML={{ __html: htmlString }} /> */}
-                <h1>{headingText}</h1>
-
+                <h1 className='headingText'>{headingText}</h1>
                 <div className='paperList'>
                     {filteredPaperList.map((paperItem, key) => {
                         return (

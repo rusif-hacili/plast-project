@@ -16,16 +16,11 @@ import Carousel from '../../components/Carousel';
 import { useTranslation } from 'react-i18next';
 
 
+
 function Home() {
 
 
   const { t, i18n } = useTranslation();
-
-  // const changeLanguage = (e) => {
-  //     i18n.changeLanguage(e.target.value);
-  // };
-
-
 
 
   return (

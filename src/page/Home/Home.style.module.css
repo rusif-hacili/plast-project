@@ -1,7 +1,6 @@
 .main {
   background-image: url('/src/img/Rectangle.png');
-  background-size: cover;
-  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
 }
 
 .main .title {
@@ -13,7 +12,6 @@
 
 .main .title p {
   font-size: 18px;
-  /* margin-top: 222px; */
   font-weight: 400;
 }
 
@@ -36,8 +34,6 @@
 }
 
 .main .title .iconBi {
-  /* width: 30px;
-  height: 30px; */
   margin-top: 226px;
 }
 
@@ -143,7 +139,7 @@
 
 
 .sectionFour .boxFour p {
-  padding: 25px;
+  padding: 20px;
   font-size: 14px;
   line-height: 21px;
 }
